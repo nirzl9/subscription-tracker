@@ -1,0 +1,9 @@
+
+GET  http://localhost:5500/api/v1/users/69d1f5fd0c792530faff72e1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2OWQxZjVmZDBjNzkyNTMwZmFmZjcyZTEiLCJpYXQiOjE3NzUzOTI5NDgsImV4cCI6MTc3NTQ3OTM0OH0.RlorxYidWm3vwudSThrHVI0rpGobVufR62PcV4afUI8
+
+{
+  "email": "test@gmail.com",
+  "password": "iamagamer123"
+}
