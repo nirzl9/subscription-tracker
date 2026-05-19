@@ -1,6 +1,7 @@
 import express from "express";
 
 import { PORT } from "./config/env.js";
+import analyticsRouter from "./routes/analytics.routes.js";
 import authrouter from "./routes/auth.routes.js";
 import subscriptionrouter from "./routes/subscription.routes.js";
 import userRouter from "./routes/user.routes.js";
@@ -15,6 +16,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use("/api/v1/auth", authrouter);
 app.use("/api/v1/subscriptions", subscriptionrouter);
 app.use("/api/v1/users", userRouter);
+app.use("/api/v1/analytics", analyticsRouter);
 
 app.use(errorMiddleware);
 
